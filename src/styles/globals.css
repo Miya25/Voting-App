@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Cyberpunkish font */
+@font-face {
+  font-family: 'Orbitron';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Orbitron Regular'), local('Orbitron-Regular'), url(../../public/Orbitron-Regular.ttf) format('ttf');
+}
+
+html {
+  font-family: 'Orbitron', sans-serif;
+}
+
+body {
+  @apply h-screen bg-gradient-to-b from-purple-800 to-indigo-900 text-gray-300;
+}
+
+/* Cyberpunkish button style with neon border */
+.button {
+  @apply bg-purple-600 hover:bg-purple-700 text-white font-semibold py-2 px-4 border-b-4 border-purple-800 rounded-md transition duration-300;
+}
+
+/* Neon text glow effect */
+.glow {
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+}
+
+/* Cyberpunk card style */
+.card {
+  @apply bg-gray-800 border border-gray-700 p-6 rounded-md shadow-md;
+}
+
+/* Neon input focus effect */
+.input:focus {
+  @apply border-blue-500 ring ring-blue-300 focus:ring-opacity-50;
+}
+
+/* Futuristic box shadow */
+.box {
+  @apply shadow-xl;
+}
