@@ -2,6 +2,8 @@ import type { NextPage } from "next";
 import Link from "next/link";
 import Head from "next/head";
 import { trpc } from "../utils/trpc";
+import { Analytics } from '@vercel/analytics/react';
+
 
 const RenderData: React.FC = () => {
   const { data, isLoading, isError } = trpc.useQuery(["polls.getAllUser"]);
@@ -79,6 +81,7 @@ const Home: NextPage = () => {
           <RenderData />
         </div>
       </div>
+      <Analytics />
     </>
   );
 };
