@@ -34,7 +34,7 @@ const NewPollPage: NextPage = () => {
 
   const handleOptionChange = (
     e: ChangeEvent<HTMLInputElement>,
-    index: number
+    index: number,
   ) => {
     const newOptions = [...options];
     newOptions[index] = e.currentTarget.value;
@@ -53,7 +53,7 @@ const NewPollPage: NextPage = () => {
 
     if (newOptions.length == 0 || question.length == 0) {
       alert(
-        "The Question must be at least 5 characters and u must have 2 options"
+        "The Question must be at least 5 characters and u must have 2 options",
       );
       return;
     }

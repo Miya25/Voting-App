@@ -27,10 +27,7 @@ const RenderData: React.FC = () => {
         Welcome to <span className="text-black">Vote </span>
         <br />
         Create{" "}
-        <a
-          className="text-black underline"
-          href="/vote"
-        >
+        <a className="text-black underline" href="/vote">
           Better
         </a>{" "}
         instant, customizable polls with ease
@@ -75,8 +72,7 @@ const Home: NextPage = () => {
             <div className="fixed top-5 text-4xl font-bold cursor-pointer">
               Vote
               <span className=" ml-2 font-normal text-xl text-gray-400">
-              The easiest open soure vote making platform out there.
-
+                The easiest open soure vote making platform out there.
               </span>
             </div>
           </Link>

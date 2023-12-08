@@ -34,7 +34,7 @@ const QuestionContent: React.FC<{ id: string }> = ({ id }) => {
         setIsLoadingVotes(true);
         trpcUtils.refetchQueries(["polls.getVotes", { id }]);
       },
-    }
+    },
   );
 
   const handleVoting = (oId: string) => {
@@ -117,7 +117,7 @@ const QuestionPage: NextPage = () => {
             <div className="fixed top-5 text-4xl font-bold cursor-pointer">
               Vote
               <span className=" ml-2 font-normal text-xl text-gray-400">
-              The easiest open soure vote making platform out there.
+                The easiest open soure vote making platform out there.
               </span>
             </div>
           </Link>
