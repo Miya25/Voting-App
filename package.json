@@ -14,7 +14,7 @@
     "format": "prettier -w ./**/**/*.{ts,tsx,js,jsx}"
   },
   "dependencies": {
-    "@prisma/client": "^4.0.0",
+    "@prisma/client": "^4.16.2",
     "@trpc/client": "^9.25.3",
     "@trpc/next": "^9.25.3",
     "@trpc/react": "^9.25.3",
